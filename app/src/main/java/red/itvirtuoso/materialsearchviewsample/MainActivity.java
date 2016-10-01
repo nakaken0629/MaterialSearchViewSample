@@ -2,6 +2,7 @@ package red.itvirtuoso.materialsearchviewsample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ActionBarOverlayLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         ViewGroup viewGroup = (ViewGroup) findViewById(R.id.activity_main).getParent();
         while (viewGroup != null) {
-            if (viewGroup instanceof android.support.v7.widget.ActionBarOverlayLayout) {
+            if (viewGroup instanceof ActionBarOverlayLayout) {
                 viewGroup = (ViewGroup) viewGroup.getParent();
                 viewGroup.addView(searchView);
                 break;
