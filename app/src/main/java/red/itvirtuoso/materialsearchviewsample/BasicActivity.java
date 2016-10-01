@@ -31,7 +31,6 @@ public class BasicActivity extends AppCompatActivity {
             viewGroup = (ViewGroup) viewGroup.getParent();
         }
 
-
         searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
